@@ -28,7 +28,10 @@ const router = createBrowserRouter([
     path: "/game/:type",
     element : <Game />
   }
-]);
+],
+{
+  basename: "/RealAIs/"
+});
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
